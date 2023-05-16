@@ -7,6 +7,8 @@ function abort ($code = 404) {
 }
 
 function authorize($condition, $status = Response::FORBIDDEN) {
+    var_dump($condition);
+    echo 'Authrization !!';
     if (! $condition) {
         abort($status);
     }
@@ -17,4 +19,8 @@ function dd ($value) {
     var_dump($value);
     echo "</pre>";
     die();
+}
+
+function urlIs($value) {
+    return $_SERVER['REQUEST_URI'] === $value;
 }

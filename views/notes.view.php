@@ -1,6 +1,7 @@
-<?php require '../header.php'; ?>
-<?php require '../nav.php'; ?>
-<?php require '../banner.php'; ?>
+<?php require ('./partials/header.php') ?>
+<?php require ('./partials/nav.php') ?>
+<?php require ('./partials/banner.php') ?>
+
 
 <main>
     <?php foreach($notes as $note):  ?>
@@ -8,4 +9,4 @@
     <?php endforeach;  ?>
 </main>
 
-<?php require '../footer.php'; ?>
+<?php require ('./partials/footer.php') ?>

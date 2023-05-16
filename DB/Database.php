@@ -1,20 +1,5 @@
 <?php
 
-// $serverName = "localhost";
-// $userName ="root";
-// $password="";
-// $dbName = "instra";
-
-// // create a connection
-// $db = new mysqli('localhost', $username, $password);
-
-//  if(!$db){
-//  echo "sorry we failed to connect!";
-//  exit();
-//  }
-
-//  echo "Connection was Successful";
-
 class Database
 {
    public $connection;
